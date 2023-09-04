@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int data;
+    int numBits= 0;
+    cout<<"Enter your binary number:- "<<endl;
+    cin>>data;
+    int temp= data;
+    while(temp > 0){
+        if(temp%10==1){
+            numBits++;
+        }
+        temp= temp/10;
+    }
+    if(numBits%2==0){
+        cout<<"The entered no. "<<data<<" has even parity"<<endl;
+        cout<<"So, the parity bit added is:- 1"<<endl;
+    }
+    else{
+        cout<<"The entered no. "<<data<<" don't have even parity."<<endl;
+        cout<<"So, the parity bit added is:- 1"<<endl;
+    }
+  
+    return 0;
+}
